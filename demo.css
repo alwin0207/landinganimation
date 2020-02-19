@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+}
+
+/* ---------------------- tophoto classes ---------------------- */
+
+.topphoto.loadcase{
+    transition: none;
+}
+
+
+.topphoto {
+    height: 100vh;
+    background-color: rgba(0,0,255,0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: height 1s, background-color 2s;
+}
+
+.topphoto h1{
+    
+    color: red;
+    margin-left: 3vh;
+    margin-right: 3vh;
+}
+
+.photoinhoud {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    padding: 20px 40px;
+    border: 4px solid red;
+    background-color: rgba(126, 124, 106, 0.4);
+}
+
+/* ---------------------- background classes ---------------------- */
+
+#background{
+    background-image: url("https://i.picsum.photos/id/1019/5472/3648.jpg");
+    background-size: 100%, 100%;
+}
+
+/* ---------------------- photonav classes ---------------------- */
+
+.photonav {
+    background-color: #d72631;
+    overflow: hidden;
+    margin-top: 5vh;
+    margin-left: 3vh;
+    margin-right: 3vh;
+    transition: margin 1s;
+}
+.photonav a {
+    color: black;
+    float: left;
+    padding: 16px 14px;
+    text-decoration: none;
+    font-size: 23px;
+    font-family: Arial, Helvetica, 
+}
+.photonav a.active{
+    background-color: #5c3c92;
+}
+
+.photonav a:hover{
+    background-color: #077b8a;
+}
+
+/* ---------------------- button classes ---------------------- */
+
+#chevroncontainer{
+    
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    
+}
+
+#triangle-topright {
+    width: 0;
+    height: 0;
+    border-top: 20px solid red;
+    border-left: 60px solid transparent;
+    border-bottom: 0px;
+    border-right: 0px;
+  }
+
+  #triangle-topleft {
+    width: 0;
+    height: 0;
+    border-top: 20px solid red;
+    border-right: 60px solid transparent;
+    border-left: 0px;
+    border-bottom: 0px;
+  }
+
+/* ---------------------- contentmode classes ---------------------- */
+
+.contentmode {
+    height: 30vh;
+    background-color: rgba(0,0,255,1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: height 1s, background-color 2s;
+    transition-delay: 1s;
+}
+
+.contentmode .photonav {
+    position: sticky;
+    background-color: gray;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    transition: margin 1s;
+}
+.contentmode #triangle-topright {
+    width: 0;
+    height: 0;
+    border-bottom: 20px solid red;
+    border-left: 60px solid transparent;
+    border-right: 0px;
+    border-top: 0px;
+}
+
+.contentmode #triangle-topleft{
+    width: 0;
+    height: 0;
+    border-bottom: 20px solid red;
+    border-right: 60px solid transparent;
+    border-top: 0px;
+    border-left: 0px;
+}
+
+
+.contentmode .photoinhoud {
+    background-color: rgba(126, 124, 106, 0);
+    border: none;
+    color: rgba(255,0,0,0);
+    transition: color 0.5s, background-color 0.5s, border 0.25s;
+    transition-delay: 0s;
+    
+
+}
+
+
